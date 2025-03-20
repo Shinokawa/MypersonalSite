@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我 - Shinokawa</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Shinokawa</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="about.html">关于我</a></li>
+                    <li><a href="https://github.com/Shinokawa" target="_blank">GitHub <i class="fab fa-github"></i></a></li>
+                    <li><a href="projects.html">项目</a></li>
+                    <li><a href="contact.html" class="active">联系我</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>联系我</h1>
+                <p>有任何问题或合作意向，欢迎通过以下方式联系我</p>
+            </div>
+        </section>
+        
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- 联系表单 -->
+                    <div class="contact-form">
+                        <h2>发送消息</h2>
+                        <form id="contactForm" action="#" method="POST">
+                            <div class="form-group">
+                                <label for="name">姓名</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">邮箱</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">主题</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">消息</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            <!-- 蜜罐字段，用于捕获自动机器人 -->
+                            <div class="form-group honeypot">
+                                <input type="text" id="website" name="website" tabindex="-1">
+                            </div>
+                            <button type="submit" class="btn primary">发送消息</button>
+                            <div class="form-status"></div>
+                        </form>
+                    </div>
+                    
+                    <!-- 联系信息 -->
+                    <div class="contact-info">
+                        <h2>联系方式</h2>
+                        <div class="info-item">
+                            <div class="icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="details">
+                                <h3>电子邮箱</h3>
+                                <p><a href="mailto:sk_kiko@163.com">sk_kiko@163.com</a></p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="icon">
+                                <i class="fab fa-qq"></i>
+                            </div>
+                            <div class="details">
+                                <h3>QQ</h3>
+                                <p><a href="tencent://message/?uin=1269925847&Site=&Menu=yes">1269925847</a></p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="details">
+                                <h3>GitHub</h3>
+                                <p><a href="https://github.com/Shinokawa" target="_blank">github.com/Shinokawa</a></p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="icon">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </div>
+                            <div class="details">
+                                <h3>X</h3>
+                                <p><a href="https://x.com/shinokawa_s?s=11&t=HDQVZfhLxUsm5D1WKnvr1Q" target="_blank">@shinokawa_s</a></p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="details">
+                                <h3>位置</h3>
+                                <p>中国，大连</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Shinokawa</p>
+                <div class="social-links">
+                    <a href="https://github.com/Shinokawa" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://x.com/shinokawa_s?s=11&t=HDQVZfhLxUsm5D1WKnvr1Q" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="tencent://message/?uin=1269925847&Site=&Menu=yes" aria-label="QQ"><i class="fab fa-qq"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
